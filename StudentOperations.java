@@ -48,3 +48,16 @@ public class StudentOperations {
         return null;
     }
 
+	// method to update existing student details
+    public boolean updateStudent(long prn, String name, String dept, String batch, double cgpa) {
+        Student student = searchByPRN(prn);
+        if (student != null) {
+            student.setName(name);
+            student.setDept(dept);
+            student.setBatch(batch);
+            student.setCGPA(cgpa);
+            return true;
+        }
+        return false;
+    }
+
