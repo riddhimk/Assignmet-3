@@ -20,3 +20,13 @@ public class StudentOperations {
         }
     }
 
+	// method to search student by PRN
+    public Student searchByPRN(long prn) {
+        for (Student student : students) {
+            if (student.getPRN() == prn) {
+                return student;
+            }
+        }
+        return null;
+    }
+
