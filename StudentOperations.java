@@ -61,3 +61,13 @@ public class StudentOperations {
         return false;
     }
 
+	// method to delete student
+    public void deleteStudent(long prn) {
+		for (int i = 0; i < students.size(); i++) {
+			if (students.get(i).getPRN() == prn) {
+				students.remove(i);
+				return;
+			}
+		}
+	}	
+}
