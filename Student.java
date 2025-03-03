@@ -13,3 +13,44 @@ public class Student {
         this.cgpa = cgpa;
     }
 
+	// setter and getter for student details
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public long getPRN() {
+        return prn;
+    }
+
+    public void setPRN(long prn) {
+        this.prn = prn;
+    }
+
+    public String getDept() {
+        return dept;
+    }
+
+    public void setDept(String dept) {
+        this.dept = dept;
+    }
+
+    public String getBatch() {
+        return batch;
+    }
+
+    public void setBatch(String batch) {
+        this.batch = batch;
+    }
+
+    public double getCGPA() {
+        return cgpa;
+    }
+
+    public void setCGPA(double cgpa) {
+        this.cgpa = cgpa;
+    }
+
