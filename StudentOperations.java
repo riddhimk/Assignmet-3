@@ -40,3 +40,11 @@ public class StudentOperations {
         return null;
     }
 
+	// method to search student by position
+    public Student searchByPosition(int pos) {
+        if (pos >= 0 && pos < students.size()) {
+            return students.get(pos);
+        }
+        return null;
+    }
+
